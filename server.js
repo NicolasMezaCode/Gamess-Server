@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const urlsRouter=require('./Server/routes/urls')
 const authRouter=require('./Server/routes/auth')
 const app=express()
-const PORT=process.env.PORT||8080
+const PORT=process.env.PORT||5000
 const cors=require('cors')
 app.use(cors({
     origin:"*",
