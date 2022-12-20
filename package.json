@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "concurrently \"cd ./Client && npm run dev\" \"nodemon server.js\" "
+    "dev": "concurrently \"cd ./Client && npm run dev\" \"nodemon server.js\" ",
+    "build": "react-scripts build"
   }
 }
