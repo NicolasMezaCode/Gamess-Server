@@ -28,8 +28,7 @@
     "webpack-cli": "^5.0.0"
   },
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "concurrently \"cd ./Client && npm run dev\" \"nodemon server.js\" ",
-    "build": "vite build"
-  }
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+}
 }
