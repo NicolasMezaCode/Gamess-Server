@@ -1,3 +1,2 @@
-# Final-project
-Final project for the Web Developer program at Cornerstone
-Server for the project
+# Gamess-Server
+server repository for the Gamess project using Node Js.
