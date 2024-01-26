@@ -11,7 +11,7 @@ const showMostRated=async(req,res)=>{
             'Client-ID':`${process.env.CLIENT_ID}`,
             'Authorization': `Bearer ${process.env.AUTHORIZATION}`,
         },
-        data:"fields cover.*,total_rating_count,aggregated_rating; where cover!= null & total_rating_count != null; where total_rating_count > 1500 ; limit:25;"
+        data:"fields cover.*,total_rating_count,aggregated_rating; where cover!= null & total_rating_count != null & aggregated_rating !=null ; where total_rating_count > 1500 ; limit:25;"
     })
     .then((response)=>{
         res.json(response.data)
